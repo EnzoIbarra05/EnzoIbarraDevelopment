@@ -1,0 +1,221 @@
+.sobre-mi {
+  padding: 0px 20px;
+  background-color: #0e1726;
+  color: #eaeaea;
+  font-family: "Cabin", sans-serif;
+  padding-bottom: 300px;
+  padding-top: 250px;
+}
+
+.titulo {
+  text-align: center;
+  margin-bottom: 1px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 70px;
+}
+
+.titulo h1 {
+  font-size: 3rem;
+  letter-spacing: 2px;
+  animation: shine 3s infinite;
+  color: white;
+}
+
+#colorSobre {
+  color: #ffffff;
+}
+
+#colorMi {
+  color: #600db9;
+}
+
+.descripcion {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.descripcion p {
+  font-family: sans-serif;
+  font-size: 1.2rem;
+  color: #737373;
+}
+
+@keyframes shine {
+  0% {
+    background-position: -200%;
+  }
+  100% {
+    background-position: 200%;
+  }
+}
+
+.perfil {
+  display: flex;
+  margin-top: 80px;
+}
+
+.info {
+  width: 50%;
+  justify-content: start;
+  align-items: center;
+}
+
+.infoTitle h1 {
+  font-family: sans-serif;
+  color: #4eeba9;
+}
+
+.infoParrafo {
+  font-family: sans-serif;
+  color: #eaeaea;
+  margin-bottom: 30px;
+}
+
+/* CONTENEDOR DE LOS BOTONES */
+.infoButons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* Botones iguales en tamaño */
+#cv,
+#git {
+  font-family: sans-serif;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 40px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  min-width: 150px;
+  text-align: center;
+  display: inline-block;
+}
+
+#cv {
+  background-color: #600db9;
+  color: #ffffff;
+}
+
+#cv:hover {
+  background-color: #370e62;
+}
+
+#git {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+#git:hover {
+  background-color: aliceblue;
+  color: #42bf68;
+}
+
+.tecnologia {
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  margin-left: 300px;
+  margin-top: 10px;
+}
+
+.tecno1 {
+  display: flex;
+}
+
+.tecno2 {
+  display: flex;
+}
+
+.cartita1 {
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #4a495fb0;
+  max-width: 15vw;
+  border-radius: 10px;
+  padding-top: 10px;
+  margin-right: 25px;
+  margin-bottom: 25px;
+}
+
+.cartita1 img {
+  width: 30px;
+}
+
+#descri {
+  color: #9a9a9a;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .perfil {
+    flex-direction: column;
+  }
+
+  .info,
+  .tecnologia {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: start;
+  }
+
+  .infoTitle h1 {
+    font-size: 1.8rem;
+  }
+
+  .infoParrafo {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  /* BOTONES STACK VERTICAL */
+  .infoButons {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  #cv,
+  #git {
+    width: 80%;
+    max-width: 350px;
+    padding: 15px 0;
+    text-align: center;
+  }
+
+  .tecnologia {
+    margin-left: 0;
+    margin-top: 30px;
+  }
+
+  .tecno1,
+  .tecno2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cartita1 {
+    max-width: 90%;
+    width: 80%;
+  }
+
+  .titulo h1 {
+    font-size: 2.2rem;
+  }
+
+  .descripcion p {
+    font-size: 1rem;
+    text-align: center;
+    padding: 0 10px;
+  }
+}
