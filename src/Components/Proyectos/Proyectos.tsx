@@ -52,7 +52,7 @@ export default function Proyectos() {
               <span className="usado">React</span>
               <span className="usado">Figma design</span>
             </div>
-            <div className="linkgit"><a href="https://ferreteria-im.vercel.app/"> ir a la pagina <img  className="ico" src="/img/redireccion.png" alt="" /> </a></div>
+            <div className="linkgit"><a href="https://ferreteria-im.vercel.app/" target="_blank"  rel="noopener noreferrer"> ir a la pagina <img  className="ico" src="/img/redireccion.png" alt="" /> </a></div>
           </div>
         </div>
 
@@ -73,7 +73,16 @@ export default function Proyectos() {
               <span className="usado">CSS</span>
               <span className="usado">HTML</span>
             </div>
-            <div className="linkgit"><a href="https://github.com/EnzoIbarra05/Mi-portfolio.git"> ir a GIT <img  className="ico" src="/img/redireccion.png" alt="" /> </a></div>
+           <div className="linkgit">
+  <a 
+    href="https://github.com/EnzoIbarra05/Mi-portfolio.git" 
+    target="_blank" 
+    rel="noopener noreferrer"
+  >
+    ir a GIT <img className="ico" src="/img/redireccion.png" alt="" />
+  </a>
+</div>
+
           </div>
         </div>
 
@@ -95,7 +104,7 @@ export default function Proyectos() {
               <span className="usado">CSS</span>
               <span className="usado">HTML</span>
             </div>
-            <div className="linkgit"><a href="https://visua-landing.vercel.app/"> ir a la pagina <img  className="ico" src="/img/redireccion.png" alt="" /></a></div>
+            <div className="linkgit"><a href="https://visua-landing.vercel.app/" target="_blank" rel="noopener noreferrer"> ir a la pagina <img  className="ico" src="/img/redireccion.png" alt="" /></a></div>
           </div>
         </div>
        
