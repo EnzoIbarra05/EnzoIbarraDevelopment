@@ -35,23 +35,24 @@ export default function Proyectos() {
         {/* Carta 2 */}
         <div className="card">
           <div className="carousel carousel-2">
-            <img src="/img/landingMosh.png" alt="Vista 1" />
-            <img src="/img/food.png" alt="Vista 2" />
-            <img src="/img/carrito.png" alt="Vista 3" />
+            <img src="/img/cap1.png" alt="Vista 1" />
+            <img src="/img/cap2.png" alt="Vista 2" />
+            <img src="/img/cap3.png" alt="Vista 3" />
+            <img src="/img/cap4.png" alt="Vista 4" />
           </div>
           <div className="card-content">
-            <h2>E-commerce hamburguesas</h2>
+            <h2>Landing page ferreteria</h2>
             <p id="parraf">
-              Sitio web para venta de productos electrónicos con carrito y pagos simulados.
+              Sitio web para comercial ferreteria, ubicacion, contacto e info.
             </p>
             <div className="tecnologias">
               <span className="usado">HTML</span>
               <span className="usado">CSS</span>
               <span className="usado">JavaScript</span>
               <span className="usado">React</span>
-              <span className="usado">Spring Boot</span>
-              <span className="usado">MySQL</span>
+              <span className="usado">Figma design</span>
             </div>
+            <div className="linkgit"><a href="https://ferreteria-im.vercel.app/"> ir a la pagina <img  className="ico" src="/img/redireccion.png" alt="" /> </a></div>
           </div>
         </div>
 
