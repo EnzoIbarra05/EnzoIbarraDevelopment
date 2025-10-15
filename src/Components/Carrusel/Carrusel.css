@@ -1,0 +1,39 @@
+.carrusel-tecnologias {
+  width: 100%;
+  overflow: hidden;
+  background-color: #0d1117;
+  padding: 30px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.slider {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  width: max-content;
+  animation: scroll 40s linear infinite;
+}
+
+.slide img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  filter: grayscale(100%) brightness(0.8);
+  transition: all 0.3s ease;
+}
+
+.slide img:hover {
+  filter: grayscale(0%) brightness(1.1);
+  transform: scale(1.1);
+}
+
+/* Movimiento continuo */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-33.33%);
+  }
+}

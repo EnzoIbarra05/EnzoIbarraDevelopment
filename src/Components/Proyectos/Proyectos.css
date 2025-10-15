@@ -1,5 +1,5 @@
 .proyectos {
-  padding: 200px 20px;
+  padding: 100px 20px;
   text-align: center;
   background-color: #0d1117;
   color: white;
@@ -25,22 +25,48 @@
   gap: 30px;
 }
 
+/* 🟢 ESTILO DE LAS CARDS */
 .card {
   background-color: #1a1a1a;
   border-radius: 20px;
   overflow: hidden;
   width: 320px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
   display: flex;
   flex-direction: column;
+  transform: perspective(1000px) rotateX(0deg) rotateY(0deg);
+  transition: all 0.4s ease;
+  position: relative;
 }
 
-/* ----- ESTILO GENERAL PARA TODOS LOS CAROUSELS ----- */
+/* ✨ Animación al pasar el mouse */
+.card:hover {
+  transform: perspective(1000px) rotateY(8deg) rotateX(4deg) scale(1.05);
+  box-shadow: 0 0 25px #4eeba955, 0 0 40px #4eeba930;
+}
+
+/* Agregamos una ligera iluminación animada */
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(78, 235, 169, 0.2), transparent 60%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+
+.card:hover::before {
+  opacity: 1;
+}
+
+/* ----- CARRUSEL ----- */
 .carousel {
   position: relative;
   width: 100%;
   height: 180px;
   overflow: hidden;
+  border-bottom: 2px solid #4eeba9;
 }
 
 .carousel img {
@@ -51,14 +77,17 @@
   height: 100%;
   object-fit: cover;
   opacity: 0;
+  transition: opacity 1s ease;
+  filter: brightness(0.9);
+  border-radius: 20px 20px 0 0;
 }
 
-/* Animación para cada carrusel */
-
-/* Carta 1 */
-.carousel-1 img {
-  animation: fadeSlider1 9s infinite;
+.carousel img:hover {
+  filter: brightness(1);
 }
+
+/* Animación del carrusel (mantengo tu estructura) */
+.carousel-1 img { animation: fadeSlider1 9s infinite; }
 .carousel-1 img:nth-child(1) { animation-delay: 0s; }
 .carousel-1 img:nth-child(2) { animation-delay: 3s; }
 .carousel-1 img:nth-child(3) { animation-delay: 6s; }
@@ -68,10 +97,7 @@
   35%      { opacity: 0; }
 }
 
-/* Carta 2 */
-.carousel-2 img {
-  animation: fadeSlider2 9s infinite;
-}
+.carousel-2 img { animation: fadeSlider2 9s infinite; }
 .carousel-2 img:nth-child(1) { animation-delay: 0s; }
 .carousel-2 img:nth-child(2) { animation-delay: 3s; }
 .carousel-2 img:nth-child(3) { animation-delay: 6s; }
@@ -81,10 +107,7 @@
   35%      { opacity: 0; }
 }
 
-/* Carta 3 */
-.carousel-3 img {
-  animation: fadeSlider3 9s infinite;
-}
+.carousel-3 img { animation: fadeSlider3 9s infinite; }
 .carousel-3 img:nth-child(1) { animation-delay: 0s; }
 .carousel-3 img:nth-child(2) { animation-delay: 3s; }
 .carousel-3 img:nth-child(3) { animation-delay: 6s; }
@@ -94,23 +117,30 @@
   35%      { opacity: 0; }
 }
 
-
 /* ----- CONTENIDO ----- */
 .card-content {
   padding: 20px;
+  background: #1a1a1a;
 }
 
 .card-content h2 {
   font-size: 1.2rem;
   margin-bottom: 10px;
+  color: #4eeba9;
 }
 
 .card-content p {
   font-size: 0.9rem;
   margin-bottom: 15px;
-  color: #9a9a9a;
+  color: #bdbdbd;
+  transition: color 0.3s ease;
 }
 
+.card:hover .card-content p {
+  color: #ffffff;
+}
+
+/* Etiquetas de tecnologías */
 .tecnologias {
   display: flex;
   flex-wrap: wrap;
@@ -119,19 +149,36 @@
 }
 
 .usado {
-  background-color: #333;
+  background-color: #222;
   color: #9a9a9a;
-  padding: 4px 8px;
+  padding: 4px 10px;
   font-size: 0.75rem;
   border-radius: 10px;
+  border: 1px solid #4eeba955;
+  transition: all 0.3s ease;
 }
-a{
+
+.card:hover .usado {
+  background-color: #4eeba920;
+  color: #4eeba9;
+}
+
+/* Links */
+a {
   color: aliceblue;
-  
+  text-decoration: none;
 }
-.linkgit{
+
+.linkgit {
   margin-top: 10px;
 }
-.ico{
-  width: 10px;
+
+.linkgit a:hover {
+  text-decoration: underline;
+  color: #4eeba9;
+}
+
+.ico {
+  width: 12px;
+  margin-left: 5px;
 }

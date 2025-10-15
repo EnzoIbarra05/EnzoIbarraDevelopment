@@ -7,7 +7,7 @@ export default function Header() {
   return (
     <div className="container">
       <div className="Imagen">
-        <img src="/img/logoBlanco.png" alt="logo" />
+        <img src="/img/logoblanco.png" alt="logo" />
       </div>
 
       <div className="menu-btn" onClick={() => setOpen(!open)}>

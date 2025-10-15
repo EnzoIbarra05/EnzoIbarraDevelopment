@@ -3,8 +3,8 @@
   background-color: #0e1726;
   color: #eaeaea;
   font-family: "Cabin", sans-serif;
-  padding-bottom: 300px;
-  padding-top: 250px;
+  padding-bottom: 100px;
+  padding-top: 100px;
 }
 
 .titulo {
@@ -126,10 +126,7 @@
   margin-top: 10px;
 }
 
-.tecno1 {
-  display: flex;
-}
-
+.tecno1,
 .tecno2 {
   display: flex;
 }
@@ -142,13 +139,38 @@
   background-color: #4a495fb0;
   max-width: 15vw;
   border-radius: 10px;
-  padding-top: 10px;
+  padding: 15px 10px;
   margin-right: 25px;
   margin-bottom: 25px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0); /* sin brillo inicial */
 }
 
 .cartita1 img {
-  width: 30px;
+  width: 40px;
+  transition: all 0.3s ease;
+}
+
+/* 🌟 Efecto hover con inclinación y brillo neon */
+.cartita1:hover {
+  transform: rotateY(10deg) rotateX(5deg) scale(1.05);
+  box-shadow: 0 0 20px #ae00ff, 0 0 40px #b700ff50, 0 0 60px #e100ff30;
+  background-color: #4a495fdd;
+}
+
+/* También inclinamos ligeramente la imagen */
+.cartita1:hover img {
+  transform: rotateY(10deg) rotateX(5deg) scale(1.1);
+
+}
+
+/* Transiciones suaves de texto */
+.cartita1 p {
+  transition: color 0.3s ease;
+}
+
+.cartita1:hover p {
+  color: #ffffff;
 }
 
 #descri {
