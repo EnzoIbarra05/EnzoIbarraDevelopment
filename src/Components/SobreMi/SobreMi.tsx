@@ -30,7 +30,7 @@ export default function SobreMi() {
             mantengo al día con las últimas tendencias del sector.
           </div>
           <div className="infoButons">
-            <a href="/public/File/cvEnzo.pdf" download="CvEnzo.pdf">
+            <a href="/File/cvEnzo.pdf" download="CvEnzo.pdf">
               <button id="cv">Descargar CV</button>
             </a>
             <a
@@ -43,32 +43,36 @@ export default function SobreMi() {
             </a>
           </div>
         </div>
-        <div className="tecnologia">
-          <div className="tecno1">
-            <div className="cartita1">
-              <img src="../../../public/img/codigo.png" alt="" />
-              <p>Frontend</p>
-              <p id="descri">React, JavaScript, HTML/CSS</p>
-            </div>
-            <div className="cartita1">
-              <img src="../../../public/img/backend.png" alt="" />
-              <p>Backend</p>
-              <p id="descri">Java, Spring Boot, Node.js</p>
-            </div>
-          </div>
-          <div className="tecno2">
-            <div className="cartita1">
-              <img src="../../../public/img/database.png" alt="" />
-              <p>Database</p>
-              <p id="descri">SQL, MongoDB, MySQL</p>
-            </div>
-            <div className="cartita1">
-              <img src="../../../public/img/paleta.png" alt="" />
-              <p>Design</p>
-              <p id="descri">Figma, UI/UX Design</p>
-            </div>
-          </div>
-        </div>
+<div className="tecnologia">
+  <div className="tecno1">
+    <div className="cartita1">
+      <img src="/img/codigo.png" alt="Frontend" />
+      <p>Frontend</p>
+      <p id="descri">React, JavaScript, HTML/CSS</p>
+    </div>
+
+    <div className="cartita1">
+      <img src="/img/backend.png" alt="Backend" />
+      <p>Backend</p>
+      <p id="descri">Java, Spring Boot, Node.js</p>
+    </div>
+  </div>
+
+  <div className="tecno2">
+    <div className="cartita1">
+      <img src="/img/database.png" alt="Database" />
+      <p>Database</p>
+      <p id="descri">SQL, MongoDB, MySQL</p>
+    </div>
+
+    <div className="cartita1">
+      <img src="/img/paleta.png" alt="Design" />
+      <p>Design</p>
+      <p id="descri">Figma, UI/UX Design</p>
+    </div>
+  </div>
+</div>
+
       </div>
     </section>
   );
