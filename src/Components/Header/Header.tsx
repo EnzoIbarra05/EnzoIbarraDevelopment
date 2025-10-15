@@ -7,8 +7,9 @@ export default function Header() {
   return (
     <div className="container">
       <div className="Imagen">
-        <img src="/img/logoblanco.png" alt="logo" />
-      </div>
+  <img src="/img/logoblanco.png" alt="Logo Enzo Ibarra" />
+</div>
+
 
       <div className="menu-btn" onClick={() => setOpen(!open)}>
         <div className={`hamburger ${open ? "open" : ""}`}></div>
