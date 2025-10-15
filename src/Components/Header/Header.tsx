@@ -7,7 +7,7 @@ export default function Header() {
   return (
     <div className="container">
       <div className="Imagen">
-  <img src="/img/logoblanco.png" alt="Logo Enzo Ibarra" />
+  <img src="/img/blanco.png" alt="Logo Enzo Ibarra" />
 </div>
 
 
