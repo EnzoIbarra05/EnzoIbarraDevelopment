@@ -30,7 +30,7 @@ export default function SobreMi() {
             mantengo al día con las últimas tendencias del sector.
           </div>
           <div className="infoButons">
-            <a href="/src/File/cvEnzo.pdf" download="CV-Enzo-Ibarra.pdf">
+            <a href="/src/File/cvEnzo.pdf" download="CvEnzo.pdf">
               <button id="cv">Descargar CV</button>
             </a>
             <a
