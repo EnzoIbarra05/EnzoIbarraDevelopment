@@ -35,10 +35,11 @@ export default function Proyectos() {
         {/* Carta 2 */}
         <div className="card">
           <div className="carousel carousel-2">
-            <img src="/img/cap1.png" alt="Vista 1" />
-            <img src="/img/cap2.png" alt="Vista 2" />
+            <img src="/img/captura1.png" alt="Vista 1" />
+            <img src="/img/celularFerre.png" alt="Vista 2" />
             <img src="/img/cap3.png" alt="Vista 3" />
-            <img src="/img/cap4.png" alt="Vista 4" />
+            <img src="/img/pcFerre.png" alt="Vista 4" />
+            
           </div>
           <div className="card-content">
             <h2>Landing page ferreteria</h2>
@@ -59,9 +60,10 @@ export default function Proyectos() {
         {/* Carta 3 */}
         <div className="card">
           <div className="carousel carousel-3">
-            <img src="/img/mipag.png" alt="Vista 1" />
+            <img src="/img/pcEnzo.png" alt="Vista 1" />
             <img src="/img/sobreMi.png" alt="Vista 2" />
-            <img src="/img/contactame.png" alt="Vista 3" />
+            <img src="/img/celuEnzo.png" alt="Vista 3" />
+            <img src="/img/miportfolio.png" alt="Vista 4" />
           </div>
           <div className="card-content">
             <h2>Portfolio Personal</h2>
@@ -90,9 +92,10 @@ export default function Proyectos() {
         {/* Carta 4 */}
            <div className="card">
           <div className="carousel carousel-3">
-            <img src="/img/visualanding.png" alt="Vista 1" />
-            <img src="/img/visuaportfolio.png" alt="Vista 2" />
-            <img src="/img/visuacontacto.png" alt="Vista 3" />
+            <img src="/img/visuaCelu.png" alt="Vista 1" />
+            <img src="/img/portfolioVisua.png" alt="Vista 2" />
+            <img src="/img/contactoVisua.png" alt="Vista 3" />
+            <img src="/img/landingVisua.png" alt="Vista 1" />
           </div>
           <div className="card-content">
             <h2>Pagina Empresarial</h2>

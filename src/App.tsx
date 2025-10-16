@@ -15,7 +15,10 @@ function App() {
         <div className="hero-container">
           <div className="hero-content">
             <h1>ENZO IBARRA</h1>
-            <p>Desarrollador Full-Stack y diseñador web que crea experiencias digitales con pasión y precisión.</p>
+            <p>
+              Desarrollador Full-Stack y diseñador web que da vida a ideas digitales,
+              fusionando tecnología, creatividad y precisión en cada proyecto.
+            </p>
             <div className='containButton'>
               <a href="#proyectos">
                 <button id='job'>Ver mis trabajos</button>
@@ -25,12 +28,16 @@ function App() {
               </a>
             </div>
           </div>
+
+          <div className="hero-image">
+            <img src="/img/3dImage.png" alt="Enzo 3D" />
+          </div>
         </div>
       </div>
 
       <div id='sobreMi'><SobreMi /></div>
       <div id='proyectos'><Proyectos /></div>
-      <div id='carrusel'><Carrusel /></div> {/* 👈 acá va el componente */}
+      <div id='carrusel'><Carrusel /></div>
       <div id='contacto'><Contacto /></div>
       <Footer />
     </>
