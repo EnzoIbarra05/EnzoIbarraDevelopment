@@ -14,11 +14,14 @@ function App() {
       <div className='principal'>
         <div className="hero-container">
           <div className="hero-content">
-            <h1>ENZO IBARRA</h1>
+            
+            <h1 className="title-minimal">ENZO IBARRA</h1>
+
             <p>
               Desarrollador Full-Stack y diseñador web que da vida a ideas digitales,
               fusionando tecnología, creatividad y precisión en cada proyecto.
             </p>
+
             <div className='containButton'>
               <a href="#proyectos">
                 <button id='job'>Ver mis trabajos</button>
@@ -30,7 +33,7 @@ function App() {
           </div>
 
           <div className="hero-image">
-            <img src="/img/3dImage.png" alt="Enzo 3D" />
+            
           </div>
         </div>
       </div>

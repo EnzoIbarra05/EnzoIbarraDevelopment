@@ -2,39 +2,42 @@ html {
   scroll-behavior: smooth;
 }
 
+/* ================================
+   SECCIÓN PRINCIPAL / HERO
+================================ */
 .principal {
   position: relative;
   width: 100%;
   min-height: 100vh;
-  background: radial-gradient(circle at top left, #000000 0%, #000000 100%);
+  background: radial-gradient(circle at 20% 20%, #060110, #7404b076);
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 100px 20px 60px;
+  padding: 120px 20px 60px;
   box-sizing: border-box;
   overflow: hidden;
-  z-index: 1;
 }
 
-/* --- Partículas sutiles del fondo --- */
+/* --- Partículas suaves --- */
 .principal::before {
   content: '';
   position: absolute;
   width: 200%;
   height: 200%;
-  background-image: radial-gradient(rgba(255,255,255,0.08) 1px, transparent 1px);
-  background-size: 40px 40px;
-  animation: moveBg 60s linear infinite;
-  opacity: 0.4;
-  z-index: 0;
+  background-image: radial-gradient(rgba(88, 11, 155, 0.05) 1px, transparent 1px);
+  background-size: 35px 35px;
+  animation: moveBg 55s linear infinite;
+  opacity: 0.35;
 }
 
 @keyframes moveBg {
   from { transform: translate(0,0); }
-  to { transform: translate(-200px,-200px); }
+  to { transform: translate(-160px,-160px); }
 }
 
-/* --- Contenedor principal (izquierda texto, derecha imagen) --- */
+/* ================================
+   CONTENEDOR HERO
+================================ */
 .hero-container {
   position: relative;
   z-index: 2;
@@ -47,138 +50,163 @@ html {
   gap: 40px;
 }
 
-/* --- Sección de texto --- */
+/* ================================
+   TEXTO IZQUIERDA
+================================ */
 .hero-content {
   flex: 1 1 500px;
-  color: white;
-  animation: fadeInLeft 1.5s ease;
+  color: #ffffff;
+  animation: fadeInLeft 1.4s ease;
 }
 
 @keyframes fadeInLeft {
-  from { opacity: 0; transform: translateX(-60px); }
+  from { opacity: 0; transform: translateX(-50px); }
   to { opacity: 1; transform: translateX(0); }
 }
 
-.hero-content h1 {
-  font-size: 3.5rem;
-  letter-spacing: 4px;
+/* ================================
+     TÍTULO PREMIUM MINIMALISTA
+================================ */
+.title-minimal {
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  display: inline-block;
   margin: 0;
-  background: linear-gradient(90deg, #de08e1, #58ffb4, #de08e1);
-  background-size: 300% auto;
-  background-position: 0% center;
-  color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
-  animation: moveGradient 4s linear infinite;
+
+  padding-bottom: 12px;
+  border-bottom: 3px solid #42bf68;
+
+  opacity: 0;
+  transform: translateY(25px);
+  animation: fadeUpMinimal 1.4s ease forwards;
+
+  text-shadow: 0 0 20px rgba(66, 191, 104, 0.25);
 }
 
-@keyframes moveGradient {
-  0% { background-position: 0% center; }
-  100% { background-position: 100% center; }
+@keyframes fadeUpMinimal {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
+/* ================================
+    Subtítulo / descripción
+================================ */
 .hero-content p {
   font-size: 1.2rem;
-  margin-top: 20px;
-  color: #ccc;
-  line-height: 1.6;
-  max-width: 550px;
+  margin-top: 25px;
+  color: #d1d1d1;
+  line-height: 1.7;
+  max-width: 570px;
+  animation: fadeIn 2s ease;
 }
 
-/* --- Botones --- */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* ================================
+          BOTONES
+================================ */
 .containButton {
   display: flex;
   justify-content: flex-start;
   gap: 25px;
-  margin-top: 30px;
+  margin-top: 35px;
   flex-wrap: wrap;
 }
 
 .containButton button {
-  padding: 12px 24px;
-  border-radius: 10px;
+  padding: 14px 28px;
+  border-radius: 12px;
   border: none;
   font-size: 1rem;
   transition: 0.3s;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
   cursor: pointer;
-  min-width: 150px;
+  min-width: 160px;
   font-weight: bold;
 }
 
+/* Botón de trabajos */
 #job {
-  background-color: #600db9;
-  color: #fff;
+  background-color: #42bf68;
+  color: #000;
+  box-shadow: 0 0 12px rgba(66, 191, 104, 0.5);
 }
 
 #job:hover {
-  background-color: #370e62;
   transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 0 18px rgba(66, 191, 104, 0.8);
 }
 
+/* Botón contacto */
 #contact {
-  background-color: #fff;
+  background-color: #ffffff;
   color: #000;
 }
 
 #contact:hover {
-  background-color: aliceblue;
-  color: #42bf68;
+  background-color: #e5ffef;
   border: 1px solid #42bf68;
   transform: translateY(-4px) scale(1.05);
 }
 
-/* --- Imagen 3D a la derecha --- */
+/* ================================
+       IMAGEN DERECHA
+================================ */
 .hero-image {
   flex: 1 1 400px;
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: fadeInRight 1.8s ease;
+  animation: fadeInRight 1.6s ease;
 }
 
 @keyframes fadeInRight {
-  from { opacity: 0; transform: translateX(60px); }
+  from { opacity: 0; transform: translateX(50px); }
   to { opacity: 1; transform: translateX(0); }
 }
 
 .hero-image img {
   width: 520px;
   max-width: 100%;
-  filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.2));
+  filter: drop-shadow(0 0 25px rgba(255, 255, 255, 0.15));
   animation: float 5s ease-in-out infinite;
 }
 
 @keyframes float {
-  0%, 100% { transform: translateY(0px) rotate(0deg); }
-  50% { transform: translateY(-10px) rotate(1deg); }
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
 }
 
-/* --- Responsive --- */
+/* ================================
+           RESPONSIVE
+================================ */
 @media (max-width: 900px) {
   .hero-container {
     flex-direction: column-reverse;
     text-align: center;
   }
 
-  .hero-content {
-    align-items: center;
-  }
-
-  .hero-content h1 {
-    font-size: 2.6rem;
-  }
-
   .hero-content p {
     font-size: 1rem;
-    margin: 15px auto;
+    margin: 18px auto;
   }
 
-  .containButton {
-    justify-content: center;
+  .title-minimal {
+    font-size: 2.8rem;
+    letter-spacing: 5px;
   }
 
   .hero-image img {
     width: 300px;
+  }
+
+  .containButton {
+    justify-content: center;
   }
 }
